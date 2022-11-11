@@ -1,8 +1,14 @@
 import pywhatkit as pwk
 
-# +91 99668 26454 SHAZA
-# +91 78934 50233 SABIHA
+try:
+    number = input('enter whatsapp number (in proper format with country code) \nExample: +92 332 1234567 \n >> ')
+    msg = input('enter the message >> ')
+    print('Enter time (hh:mm) :')
+    hrs = int(input('hours (hh) >> '))
+    mins = int(input('minutes (mm) >> '))
+except:
+    print('Invalid Input')
 
-# pwk.sendwhatmsg('+92 332 8540680', 'hello', 13, 53)
-# pwk.sendwhatmsg('+91 99668 26454', 'h-9:57 :: m-10:27', 21, 57)
-pwk.sendwhatmsg('+91 78934 50233', 'Happy Birthday Sabiha 💞', 23, 30)
+pwk.sendwhatmsg(number, msg, hrs, mins)
+
+print('your message has been scheduled! Do not stop this program before the message has been sent.')
