@@ -3,7 +3,7 @@ import webbrowser as web
 import time
 
 msg = input('enter message to send: ')
-times = int(input('enter the number of times to send the message'))
+times = int(input('enter the number of times to send the message: '))
 
 # win_chrome_path = 'C:\Program Files\Google\Chrome\Application\chrome.exe %s'
 # web.get(win_chrome_path).open('web.whatsapp.com')
